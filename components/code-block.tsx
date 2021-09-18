@@ -1,9 +1,7 @@
-import { CodeComponent } from 'react-markdown/src/ast-to-react';
+import { CodeComponent } from 'react-markdown/lib/ast-to-react';
 import { Prism as SyntaxHighlighter } from 'react-syntax-highlighter';
 import { atomDark } from 'react-syntax-highlighter/dist/cjs/styles/prism'
 
-
-// このファイルはエラー出てるけどなんか動く。今度調べる。
 
 const CodeBlock: CodeComponent = ({ inline, className, children }) => {
 	if (inline) {
