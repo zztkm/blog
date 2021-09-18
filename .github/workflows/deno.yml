@@ -1,0 +1,13 @@
+# Automatically add open issues to Projects.
+on:
+  issues:
+    types: [opened]
+jobs:
+  createCard:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Create or Update Project Card
+        uses: peter-evans/create-or-update-project-card@v1
+        with:
+          project-name: Blog
+          column-name: Backlog
